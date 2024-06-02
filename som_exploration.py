@@ -7,6 +7,8 @@ import torch
 import torch.nn as nn
 
 #%%  
+
+# defining som class
 class SOM(nn.Module):
     def __init__(self, input_dim, hidden_dim):
         super(SOM, self).__init__()
@@ -16,4 +18,5 @@ class SOM(nn.Module):
 
     def forward(self, x):
         return torch.matmul(self.weights, x)
+     
 # experiment with scratch version of som
